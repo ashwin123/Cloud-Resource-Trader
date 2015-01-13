@@ -25,3 +25,12 @@ C:\Users\Ajmal Sohail K\Documents\unisys\CloudTradingClient\CloudTradingClient\o
 C:\Users\Ajmal Sohail K\Documents\unisys\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.Form1.resources
 C:\Users\Ajmal Sohail K\Documents\unisys\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.Properties.Resources.resources
 C:\Users\Ajmal Sohail K\Documents\unisys\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.csproj.GenerateResource.Cache
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\bin\Debug\CloudTradingClient.exe.config
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.exe
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.pdb
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\bin\Debug\CloudTradingClient.exe
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\bin\Debug\CloudTradingClient.pdb
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.csprojResolveAssemblyReference.cache
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.Form1.resources
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.Properties.Resources.resources
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTradingClient\CloudTradingClient\obj\Debug\CloudTradingClient.csproj.GenerateResource.Cache

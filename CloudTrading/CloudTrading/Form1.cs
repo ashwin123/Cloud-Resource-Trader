@@ -40,7 +40,7 @@ namespace CloudTrading
             {
                 
                 
-               client.updateFields("10","2","500","210","4","2");
+               client.updateFields("1","0","1","0","1","0");
             }
             //MessageBox.Show(client1.cpu.Text);
         }
@@ -60,10 +60,6 @@ namespace CloudTrading
             Socket sListener = new Socket(ipe.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             sListener.Bind(ipe);
             sListener.Listen(10);
-            //System.Windows.Forms.Timer test = new System.Windows.Forms.Timer();
-            //test.Interval = 1000;
-            //test.Tick += new EventHandler(test1);
-            //test.Start();
             AsyncCallback aCallback = new AsyncCallback(AcceptCallback);
             sListener.BeginAccept(aCallback, sListener);
         }
@@ -143,20 +139,11 @@ namespace CloudTrading
                         string str = content.Substring(0, content.LastIndexOf(":<Client Quit>"));
                         this.Invoke((MethodInvoker)delegate
                         {
-                            //c1_cpu.Text = str; // runs on UI thread
-                            //MessageBox.Show(str);
+                            // runs on UI thread                            
                             string[] msg = splitMessage(str);
-                            int c = 0;
-                            /*while(c!=2)
-                            {
-                                foreach (string s in msg)
-                                    Console.WriteLine(s);
-                                c++;
-                            }*/
-                            Console.WriteLine(msg.Length);
                             if (msg.Length == 8)
                             {
-                                //MessageBox.Show(str);
+                                
                                 Realupdate(msg[0], msg[2], msg[3], msg[4], msg[5], msg[6], msg[7]);
                             }
                             else if (msg.Length == 3)
@@ -173,7 +160,7 @@ namespace CloudTrading
                     else
                     {
                         // Continues to asynchronously receive data
-                        byte[] buffernew = new byte[1024];
+                        byte[] buffernew = new byte[4096];
                         obj[0] = buffernew;
                         obj[1] = handler;
                         handler.BeginReceive(buffernew, 0, buffernew.Length,
@@ -239,9 +226,9 @@ namespace CloudTrading
             ac = handler.cpu_avail_share - cps;
             if (ac < 0)
                 ac = 0;
-            MessageBox.Show("request from "+name+" is handled by "+handler.name);
+            MessageBox.Show("Request from "+name+" is being handled by "+handler.name);
            handler.updateFields(handler.cpu_avail.ToString() , ac.ToString(), handler.memory_avail.ToString() ,  am.ToString(), handler.storage_avail.ToString() , handler.storage_avail_share.ToString());
-           Thread.Sleep(5000);
+           //Thread.Sleep(5000);
            am = ac = 0;
            am = handler.memory_avail_share + amt_gb;
            if (am < 0)
