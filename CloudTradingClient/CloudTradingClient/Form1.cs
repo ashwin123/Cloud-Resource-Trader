@@ -22,15 +22,9 @@ namespace CloudTradingClient
         static System.Windows.Forms.Timer t = new System.Windows.Forms.Timer();
         Random r = new Random();
         public static int ID, tot_cpu, tot_mem, tot_stor;
-       // BackgroundWorker bw= new BackgroundWorker();
-        //bw.DoWork += DoWorkEventHandler(bw_update);
         public Form1()
         {
             InitializeComponent();
-            //getUsageStats();
-
-           
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,7 +34,7 @@ namespace CloudTradingClient
             {
                 tempSocket.Connect(ipe);
                 if (tempSocket.Connected)
-                    MessageBox.Show("Connected to Hub!");
+                    MessageBox.Show("Connected to Cloud Trading Service!", "Successful Conenction",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 getUsageStats();
             }
             catch(Exception exp)
@@ -54,7 +48,7 @@ namespace CloudTradingClient
                 // Sending message 
                 //<Client Quit> is the sign for end of data 
                 if (tb_cpu.Text == "" || memBox.Text == "")
-                    MessageBox.Show("Set both CPU and memory");
+                    MessageBox.Show("Set both CPU and memory","Invalid Resource Request",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 else
                 {   //ex request - Client 1:Request:20:200
                     string theMessageToSend = "client" + ID + ":Request:" + tb_cpu.Text + ":" + memBox.Text;
@@ -71,11 +65,23 @@ namespace CloudTradingClient
 
         public void getUsageStats()
         {
-            t.Interval =30000;
-            //MessageBox.Show("in usage stats");
+            t.Interval =15000;
             t.Start();
             t.Tick += new EventHandler(GetUpdate); //after evert t.Interval ms, GetUpdate is called
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {   //ex-req Client 1:Topup:5000
+                string theMessageToSend = "client" + ID + ":Topup:" + top_up_tb.Text;
+                byte[] msg = Encoding.Unicode.GetBytes(theMessageToSend + ":<Client Quit>");
+                // Sends data to a connected Socket. 
+                int bytesSend = tempSocket.Send(msg);
+            }
+            catch (Exception exc)
+            { MessageBox.Show(exc.ToString()); }
         }
 
         private void SendStorage(object sender, EventArgs e)
@@ -84,8 +90,6 @@ namespace CloudTradingClient
             {   //ex-req Client 1:Request:5000
                 string theMessageToSend = "client" + ID +":Request:" + stor.Text;
                 byte[] msg = Encoding.Unicode.GetBytes(theMessageToSend + ":<Client Quit>");
-
-
                 // Sends data to a connected Socket. 
                 int bytesSend = tempSocket.Send(msg);
             }
@@ -94,10 +98,7 @@ namespace CloudTradingClient
         }
 
         public void GetUpdate(Object o, EventArgs e)
-        {
-            //MessageBox.Show("in get update");
-            //bw.RunWorkerAsync();
-            
+        {            
             int cpu_avail = r.Next(Convert.ToInt32(0.3*tot_cpu),tot_cpu);
             int mem_avail = r.Next(Convert.ToInt32(0.3 * tot_mem), tot_mem);
             int stor_avail = r.Next(Convert.ToInt32(0.3 * tot_stor), tot_stor);
@@ -116,7 +117,7 @@ namespace CloudTradingClient
         private void button3_Click(object sender, EventArgs e)
         {
             // based on ID, set max values of resources for each client
-            ID = Convert.ToInt32(t_ID.Text);
+            ID = clid.SelectedIndex + 1;
             if(ID == 1)
             {
                 tot_cpu = 500;

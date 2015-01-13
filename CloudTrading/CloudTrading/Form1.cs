@@ -42,7 +42,6 @@ namespace CloudTrading
                 
                client.updateFields("1","0","1","0","1","0");
             }
-            //MessageBox.Show(client1.cpu.Text);
         }
         public static void Realupdate(string name, string c,string ca,string m,string ma,string s,string sa)
         {
@@ -103,7 +102,7 @@ namespace CloudTrading
                 }
             }
             catch (Exception exc)
-            { MessageBox.Show(exc.ToString()); }
+            { /*MessageBox.Show(exc.ToString());*/ }
         }
 
         public void ReceiveCallback(IAsyncResult ar)
@@ -181,6 +180,11 @@ namespace CloudTrading
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -228,7 +232,7 @@ namespace CloudTrading
                 ac = 0;
             MessageBox.Show("Request from "+name+" is being handled by "+handler.name);
            handler.updateFields(handler.cpu_avail.ToString() , ac.ToString(), handler.memory_avail.ToString() ,  am.ToString(), handler.storage_avail.ToString() , handler.storage_avail_share.ToString());
-           //Thread.Sleep(5000);
+           Thread.Sleep(3000);
            am = ac = 0;
            am = handler.memory_avail_share + amt_gb;
            if (am < 0)
@@ -274,13 +278,13 @@ namespace CloudTrading
             ss = handler.memory_avail_share - amt_storage;
             if (ss < 0)
                 ss = 0;
-            MessageBox.Show("request from " + name + " is handled by " + handler.name);
+            MessageBox.Show("Request from " + name + " is being handled by " + handler.name,"Resources Found",MessageBoxButtons.OK,MessageBoxIcon.Information);
             handler.updateFields(handler.cpu_avail.ToString(), handler.cpu_avail_share.ToString(), handler.memory_avail.ToString(), handler.memory_avail_share.ToString(), handler.storage_avail.ToString(), ss.ToString());
             Thread.Sleep(5000);
             ss = handler.memory_avail_share + amt_storage;
             if (ss < 0)
                 ss = 0;
-            MessageBox.Show("request from " + name + " completed by " + handler.name);
+            MessageBox.Show("Request from " + name + " has been completed by " + handler.name,"Trade Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
             handler.updateFields(handler.cpu_avail.ToString(), handler.cpu_avail_share.ToString(), handler.memory_avail.ToString(), handler.memory_avail_share.ToString(), handler.storage_avail.ToString(), ss.ToString());
            
         }
