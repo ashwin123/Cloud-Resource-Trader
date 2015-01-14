@@ -32,10 +32,12 @@ namespace CloudTrading
             Clients["client1"] = client1;
             Clients["client2"] = client2;
             Clients["client3"] = client3;
+            creditBox.Text = "0";
             update();
         }
         public static void update()
         {
+           
             foreach(var client in Clients.Values)
             {
                 
@@ -147,11 +149,38 @@ namespace CloudTrading
                             }
                             else if (msg.Length == 3)
                             {
-                                req(msg[0], double.Parse(msg[2]));
+                                if(msg[1]=="Topup")
+                                {
+                                    Clients[msg[0]].topUp(int.Parse(msg[3]));
+                                    MessageBox.Show(msg[3] + " credits purchased");
+                                    int cr = int.Parse(msg[3]);
+                                    int cur = int.Parse(creditBox.Text);
+                                    cr = cr + cur;
+                                    creditBox.Text = cr.ToString();
+                                }
+                                else
+                                {
+                                    int cost = calcCreditCost(msg[2]);
+                                    if (cost <= Clients[msg[0]].credits)
+                                    {
+                                        Clients[msg[0]].Spend(cost);
+                                        req(msg[0], double.Parse(msg[2]));
+                                    }
+                                    else
+                                        MessageBox.Show(msg[0] + " has insufficient credits for request");
+                                }
+                                
                             }
                             else if (msg.Length == 4)
                             {
-                                req(msg[0], double.Parse(msg[3]), double.Parse(msg[2]));
+                                //req(msg[0], double.Parse(msg[3]), double.Parse(msg[2]));
+                                int cost = calcCreditCost(msg[2],msg[3]);
+                                if (cost <= Clients[msg[0]].credits)
+                                {
+                                    Clients[msg[0]].Spend(cost);
+                                    req(msg[0], double.Parse(msg[3]), double.Parse(msg[2])); }
+                                else
+                                    MessageBox.Show(msg[0] + " has insufficient credits for request");
                             }
                                 
                         });
@@ -223,13 +252,34 @@ namespace CloudTrading
             }
             clients handler = Clients[c[maxi]];
             double am, ac;
+            int credit;
+            credit = 0;
             am = ac = 0;
             am = handler.memory_avail_share - amt_gb;
             if (am < 0)
+            {
                 am = 0;
+                credit += Convert.ToInt32(handler.memory_avail_share / 500);
+            }
+            else
+            {
+                credit += Convert.ToInt32(amt_gb / 500);
+            }
+                
+            
+            
             ac = handler.cpu_avail_share - cps;
             if (ac < 0)
+            {
                 ac = 0;
+                credit += Convert.ToInt32(handler.cpu_avail_share / 50);
+            }
+            else
+            {
+                credit += Convert.ToInt32(cps / 50);
+            }
+
+            handler.topUp(credit);
             MessageBox.Show("Request from "+name+" is being handled by "+handler.name);
            handler.updateFields(handler.cpu_avail.ToString() , ac.ToString(), handler.memory_avail.ToString() ,  am.ToString(), handler.storage_avail.ToString() , handler.storage_avail_share.ToString());
            Thread.Sleep(3000);
@@ -243,6 +293,22 @@ namespace CloudTrading
            MessageBox.Show("request from " + name + " completed by " + handler.name);
            handler.updateFields(handler.cpu_avail.ToString(), ac.ToString(), handler.memory_avail.ToString(), am.ToString(), handler.storage_avail.ToString(), handler.storage_avail_share.ToString());
         
+        }
+        private int calcCreditCost(string cp,string mem)
+        {
+            double c, m;
+            c = double.Parse(cp);
+            m = double.Parse(mem);
+            double val = c / 10 + m / 100;
+            return Convert.ToInt32(val);
+        }
+        private int calcCreditCost(string cp)
+        {
+            double c, m;
+            c = double.Parse(cp);
+            //m = double.Parse(mem);
+            double val = c / 100; 
+            return Convert.ToInt32(val);
         }
         private void req(string name, double amt_storage)
         {
@@ -275,9 +341,18 @@ namespace CloudTrading
             clients handler = Clients[c[maxi]];
             double  ss;
             ss=0;
+            int credit = 0;
             ss = handler.memory_avail_share - amt_storage;
             if (ss < 0)
+            {
+                credit += Convert.ToInt32(handler.memory_avail_share / 500);
                 ss = 0;
+            }
+            else
+            {
+                credit += Convert.ToInt32(amt_storage / 500);
+            }
+            handler.topUp(credit);    
             MessageBox.Show("Request from " + name + " is being handled by " + handler.name,"Resources Found",MessageBoxButtons.OK,MessageBoxIcon.Information);
             handler.updateFields(handler.cpu_avail.ToString(), handler.cpu_avail_share.ToString(), handler.memory_avail.ToString(), handler.memory_avail_share.ToString(), handler.storage_avail.ToString(), ss.ToString());
             Thread.Sleep(5000);
@@ -287,6 +362,11 @@ namespace CloudTrading
             MessageBox.Show("Request from " + name + " has been completed by " + handler.name,"Trade Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
             handler.updateFields(handler.cpu_avail.ToString(), handler.cpu_avail_share.ToString(), handler.memory_avail.ToString(), handler.memory_avail_share.ToString(), handler.storage_avail.ToString(), ss.ToString());
            
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
        
         

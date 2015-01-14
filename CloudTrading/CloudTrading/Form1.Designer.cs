@@ -30,6 +30,9 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.c1_storage_p = new System.Windows.Forms.ProgressBar();
             this.c1_storage = new System.Windows.Forms.TextBox();
             this.c1_mem_p = new System.Windows.Forms.ProgressBar();
@@ -40,6 +43,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.c2_storage_p = new System.Windows.Forms.ProgressBar();
             this.c2_mem_p = new System.Windows.Forms.ProgressBar();
             this.c2_cpu_p = new System.Windows.Forms.ProgressBar();
@@ -50,8 +56,11 @@
             this.c2_cpu = new System.Windows.Forms.TextBox();
             this.c2_mem = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.c3_storage_p = new System.Windows.Forms.ProgressBar();
+            this.label20 = new System.Windows.Forms.Label();
             this.c3_storage = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.c3_mem_p = new System.Windows.Forms.ProgressBar();
             this.c3_cpu = new System.Windows.Forms.TextBox();
             this.c3_cpu_p = new System.Windows.Forms.ProgressBar();
@@ -63,19 +72,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.creditBox = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -108,13 +108,40 @@
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(427, 14);
+            this.groupBox1.Location = new System.Drawing.Point(486, 14);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(288, 140);
+            this.groupBox1.Size = new System.Drawing.Size(324, 140);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Client1";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(253, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 24);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "GB";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(253, 64);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 24);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "MB";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(253, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 24);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "MIPS";
             // 
             // c1_storage_p
             // 
@@ -210,10 +237,38 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(124, 173);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(297, 165);
+            this.groupBox2.Size = new System.Drawing.Size(324, 165);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Client2";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(253, 117);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 24);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "GB";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(253, 79);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(38, 24);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "MB";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(253, 47);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(54, 24);
+            this.label15.TabIndex = 28;
+            this.label15.Text = "MIPS";
             // 
             // c2_storage_p
             // 
@@ -305,12 +360,21 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(427, 173);
+            this.groupBox3.Location = new System.Drawing.Point(483, 173);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(288, 165);
+            this.groupBox3.Size = new System.Drawing.Size(324, 165);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Client3";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(256, 117);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(36, 24);
+            this.label19.TabIndex = 33;
+            this.label19.Text = "GB";
             // 
             // c3_storage_p
             // 
@@ -318,6 +382,15 @@
             this.c3_storage_p.Name = "c3_storage_p";
             this.c3_storage_p.Size = new System.Drawing.Size(87, 28);
             this.c3_storage_p.TabIndex = 23;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(256, 77);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(38, 24);
+            this.label20.TabIndex = 32;
+            this.label20.Text = "MB";
             // 
             // c3_storage
             // 
@@ -327,6 +400,15 @@
             this.c3_storage.Name = "c3_storage";
             this.c3_storage.Size = new System.Drawing.Size(56, 22);
             this.c3_storage.TabIndex = 8;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(256, 44);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(54, 24);
+            this.label21.TabIndex = 31;
+            this.label21.Text = "MIPS";
             // 
             // c3_mem_p
             // 
@@ -392,7 +474,7 @@
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.textBox3);
             this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.creditBox);
             this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.textBox1);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -411,6 +493,7 @@
             this.label16.Size = new System.Drawing.Size(90, 24);
             this.label16.TabIndex = 27;
             this.label16.Text = "Efficiency";
+            this.label16.Visible = false;
             // 
             // textBox3
             // 
@@ -418,6 +501,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 29);
             this.textBox3.TabIndex = 2;
+            this.textBox3.Visible = false;
             // 
             // label17
             // 
@@ -428,12 +512,12 @@
             this.label17.TabIndex = 26;
             this.label17.Text = "Credits";
             // 
-            // textBox2
+            // creditBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(129, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 29);
-            this.textBox2.TabIndex = 1;
+            this.creditBox.Location = new System.Drawing.Point(129, 64);
+            this.creditBox.Name = "creditBox";
+            this.creditBox.Size = new System.Drawing.Size(100, 29);
+            this.creditBox.TabIndex = 1;
             // 
             // label18
             // 
@@ -443,6 +527,7 @@
             this.label18.Size = new System.Drawing.Size(57, 24);
             this.label18.TabIndex = 25;
             this.label18.Text = "Boost";
+            this.label18.Visible = false;
             // 
             // textBox1
             // 
@@ -450,6 +535,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 29);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Visible = false;
             // 
             // button2
             // 
@@ -462,93 +548,12 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(233, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 24);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "GB";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(233, 64);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 24);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "MB";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(233, 27);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 24);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "MIPS";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(236, 115);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(36, 24);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "GB";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(236, 81);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(38, 24);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "MB";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(236, 44);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(54, 24);
-            this.label15.TabIndex = 28;
-            this.label15.Text = "MIPS";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(233, 117);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(36, 24);
-            this.label19.TabIndex = 33;
-            this.label19.Text = "GB";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(233, 79);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(38, 24);
-            this.label20.TabIndex = 32;
-            this.label20.Text = "MB";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(228, 44);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(54, 24);
-            this.label21.TabIndex = 31;
-            this.label21.Text = "MIPS";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(742, 341);
+            this.ClientSize = new System.Drawing.Size(861, 341);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
@@ -598,7 +603,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox creditBox;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ProgressBar c1_storage_p;

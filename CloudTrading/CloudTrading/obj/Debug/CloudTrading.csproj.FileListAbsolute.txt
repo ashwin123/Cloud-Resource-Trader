@@ -25,3 +25,12 @@ C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading
 C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.Form1.resources
 C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.Properties.Resources.resources
 C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.csproj.GenerateResource.Cache
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\bin\Debug\CloudTrading.exe.config
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.exe
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.pdb
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\bin\Debug\CloudTrading.exe
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\bin\Debug\CloudTrading.pdb
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.csprojResolveAssemblyReference.cache
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.Form1.resources
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.Properties.Resources.resources
+C:\Users\Ajmal Sohail K\Documents\GitHub\Cloud-Resource-Trader\CloudTrading\CloudTrading\obj\Debug\CloudTrading.csproj.GenerateResource.Cache
