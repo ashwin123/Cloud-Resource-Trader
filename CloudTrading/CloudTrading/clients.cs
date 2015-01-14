@@ -71,22 +71,23 @@ namespace CloudTrading
                     double ratio = cpu_avail_share / cpu_avail;
                     if (ratio < 0.25)
                     {
-                        cpu_p.BackColor = System.Drawing.Color.Red;
-                        cpu_p.ForeColor = System.Drawing.Color.Red;
-                        ModifyProgressBarColor.SetState(cpu_p, 2);
+                        //cpu_p.BackColor = System.Drawing.Color.Red;
+                        //cpu_p.ForeColor = System.Drawing.Color.Red;
                         cpu_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(cpu_p, 2);
+                        
                     }
                     else if (ratio >= 0.25 && ratio < 0.5)
                     {
-                        cpu_p.BackColor = System.Drawing.Color.Yellow;
-                        ModifyProgressBarColor.SetState(cpu_p, 3);
+                        //cpu_p.BackColor = System.Drawing.Color.Yellow;                        
                         cpu_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(cpu_p, 3);
                     }
                     else
-                    {
-                        ModifyProgressBarColor.SetState(cpu_p, 1);
-                        cpu_p.BackColor = System.Drawing.Color.Green;
+                    {                        
+                        //cpu_p.BackColor = System.Drawing.Color.Green;
                         cpu_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(cpu_p, 1);
                     }
 
                 }
@@ -98,21 +99,24 @@ namespace CloudTrading
                     double ratio = memory_avail_share / memory_avail;
                     if (ratio < 0.25)
                     {
-                        mem_p.BackColor = System.Drawing.Color.Red;
-                        ModifyProgressBarColor.SetState(mem_p, 2);
+                        //mem_p.BackColor = System.Drawing.Color.Red;
+                        
                         mem_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(mem_p, 2);
                     }
                     else if (ratio >= 0.25 && ratio < 0.5)
                     {
-                        mem_p.BackColor = System.Drawing.Color.Yellow;
-                        ModifyProgressBarColor.SetState(mem_p, 3);
+                        //mem_p.BackColor = System.Drawing.Color.Yellow;
+                        
                         mem_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(mem_p, 3);
                     }
                     else
                     {
-                        mem_p.BackColor = System.Drawing.Color.Green;
-                        ModifyProgressBarColor.SetState(mem_p, 1);
+                        //mem_p.BackColor = System.Drawing.Color.Green;
+                        
                         mem_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(mem_p, 1);
                     }
 
                 }
@@ -124,21 +128,24 @@ namespace CloudTrading
                     double ratio = storage_avail_share / storage_avail;
                     if (ratio < 0.25)
                     {
-                        storage_p.BackColor = System.Drawing.Color.Red;
-                        ModifyProgressBarColor.SetState(storage_p, 2);
+                        //storage_p.BackColor = System.Drawing.Color.Red;
+                        
                         storage_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(storage_p, 2);
                     }
                     else if (ratio >= 0.25 && ratio < 0.5)
                     {
-                        storage_p.BackColor = System.Drawing.Color.Yellow;
-                        ModifyProgressBarColor.SetState(storage_p, 3);
+                        //storage_p.BackColor = System.Drawing.Color.Yellow;
+                        
                         storage_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(storage_p, 3);
                     }
                     else
                     {
-                        storage_p.BackColor = System.Drawing.Color.Green;
-                        ModifyProgressBarColor.SetState(storage_p, 1);
+                        //storage_p.BackColor = System.Drawing.Color.Green;
+                        
                         storage_p.Value = (int)(ratio * 100);
+                        ModifyProgressBarColor.SetState(storage_p, 1);
                     }
                 }
             }

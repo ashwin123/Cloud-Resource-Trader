@@ -108,9 +108,9 @@
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(486, 14);
+            this.groupBox1.Location = new System.Drawing.Point(566, 14);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(324, 140);
+            this.groupBox1.Size = new System.Drawing.Size(375, 140);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Client1";
@@ -119,7 +119,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(253, 99);
+            this.label4.Location = new System.Drawing.Point(315, 98);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 24);
             this.label4.TabIndex = 27;
@@ -128,7 +128,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(253, 64);
+            this.label5.Location = new System.Drawing.Point(315, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 24);
             this.label5.TabIndex = 26;
@@ -137,7 +137,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(253, 27);
+            this.label9.Location = new System.Drawing.Point(315, 25);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 24);
             this.label9.TabIndex = 25;
@@ -156,7 +156,7 @@
             this.c1_storage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1_storage.Location = new System.Drawing.Point(178, 95);
             this.c1_storage.Name = "c1_storage";
-            this.c1_storage.Size = new System.Drawing.Size(49, 22);
+            this.c1_storage.Size = new System.Drawing.Size(129, 22);
             this.c1_storage.TabIndex = 14;
             // 
             // c1_mem_p
@@ -180,7 +180,7 @@
             this.c1_cpu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1_cpu.Location = new System.Drawing.Point(178, 25);
             this.c1_cpu.Name = "c1_cpu";
-            this.c1_cpu.Size = new System.Drawing.Size(49, 22);
+            this.c1_cpu.Size = new System.Drawing.Size(129, 22);
             this.c1_cpu.TabIndex = 12;
             // 
             // label10
@@ -198,7 +198,7 @@
             this.c1_mem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1_mem.Location = new System.Drawing.Point(178, 60);
             this.c1_mem.Name = "c1_mem";
-            this.c1_mem.Size = new System.Drawing.Size(49, 22);
+            this.c1_mem.Size = new System.Drawing.Size(129, 22);
             this.c1_mem.TabIndex = 13;
             this.c1_mem.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
@@ -237,7 +237,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(124, 173);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(324, 165);
+            this.groupBox2.Size = new System.Drawing.Size(375, 165);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Client2";
@@ -246,7 +246,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(253, 117);
+            this.label13.Location = new System.Drawing.Point(315, 117);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(36, 24);
             this.label13.TabIndex = 30;
@@ -255,7 +255,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(253, 79);
+            this.label14.Location = new System.Drawing.Point(315, 79);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(38, 24);
             this.label14.TabIndex = 29;
@@ -264,7 +264,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(253, 47);
+            this.label15.Location = new System.Drawing.Point(315, 44);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(54, 24);
             this.label15.TabIndex = 28;
@@ -324,7 +324,7 @@
             this.c2_storage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c2_storage.Location = new System.Drawing.Point(181, 114);
             this.c2_storage.Name = "c2_storage";
-            this.c2_storage.Size = new System.Drawing.Size(48, 22);
+            this.c2_storage.Size = new System.Drawing.Size(128, 22);
             this.c2_storage.TabIndex = 11;
             // 
             // c2_cpu
@@ -333,7 +333,7 @@
             this.c2_cpu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c2_cpu.Location = new System.Drawing.Point(181, 44);
             this.c2_cpu.Name = "c2_cpu";
-            this.c2_cpu.Size = new System.Drawing.Size(48, 22);
+            this.c2_cpu.Size = new System.Drawing.Size(128, 22);
             this.c2_cpu.TabIndex = 9;
             // 
             // c2_mem
@@ -342,7 +342,7 @@
             this.c2_mem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c2_mem.Location = new System.Drawing.Point(181, 79);
             this.c2_mem.Name = "c2_mem";
-            this.c2_mem.Size = new System.Drawing.Size(48, 22);
+            this.c2_mem.Size = new System.Drawing.Size(128, 22);
             this.c2_mem.TabIndex = 10;
             // 
             // groupBox3
@@ -360,17 +360,18 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(483, 173);
+            this.groupBox3.Location = new System.Drawing.Point(566, 173);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(324, 165);
+            this.groupBox3.Size = new System.Drawing.Size(375, 165);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Client3";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(256, 117);
+            this.label19.Location = new System.Drawing.Point(315, 117);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(36, 24);
             this.label19.TabIndex = 33;
@@ -386,11 +387,12 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(256, 77);
+            this.label20.Location = new System.Drawing.Point(315, 79);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(38, 24);
             this.label20.TabIndex = 32;
             this.label20.Text = "MB";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // c3_storage
             // 
@@ -398,13 +400,13 @@
             this.c3_storage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c3_storage.Location = new System.Drawing.Point(181, 114);
             this.c3_storage.Name = "c3_storage";
-            this.c3_storage.Size = new System.Drawing.Size(56, 22);
+            this.c3_storage.Size = new System.Drawing.Size(126, 22);
             this.c3_storage.TabIndex = 8;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(256, 44);
+            this.label21.Location = new System.Drawing.Point(315, 44);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(54, 24);
             this.label21.TabIndex = 31;
@@ -423,7 +425,7 @@
             this.c3_cpu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c3_cpu.Location = new System.Drawing.Point(181, 44);
             this.c3_cpu.Name = "c3_cpu";
-            this.c3_cpu.Size = new System.Drawing.Size(56, 22);
+            this.c3_cpu.Size = new System.Drawing.Size(126, 22);
             this.c3_cpu.TabIndex = 6;
             // 
             // c3_cpu_p
@@ -448,7 +450,7 @@
             this.c3_mem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c3_mem.Location = new System.Drawing.Point(181, 79);
             this.c3_mem.Name = "c3_mem";
-            this.c3_mem.Size = new System.Drawing.Size(56, 22);
+            this.c3_mem.Size = new System.Drawing.Size(126, 22);
             this.c3_mem.TabIndex = 7;
             // 
             // label7
@@ -480,7 +482,7 @@
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(124, 14);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(297, 140);
+            this.groupBox5.Size = new System.Drawing.Size(375, 140);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Cloud\'o\'meter";
@@ -516,7 +518,7 @@
             // 
             this.creditBox.Location = new System.Drawing.Point(129, 64);
             this.creditBox.Name = "creditBox";
-            this.creditBox.Size = new System.Drawing.Size(100, 29);
+            this.creditBox.Size = new System.Drawing.Size(240, 29);
             this.creditBox.TabIndex = 1;
             // 
             // label18
@@ -553,7 +555,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(861, 341);
+            this.ClientSize = new System.Drawing.Size(953, 359);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);

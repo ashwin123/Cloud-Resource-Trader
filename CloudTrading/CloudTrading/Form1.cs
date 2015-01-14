@@ -149,11 +149,12 @@ namespace CloudTrading
                             }
                             else if (msg.Length == 3)
                             {
+                                //MessageBox.Show("request length three!!");
                                 if(msg[1]=="Topup")
                                 {
-                                    Clients[msg[0]].topUp(int.Parse(msg[3]));
-                                    MessageBox.Show(msg[3] + " credits purchased");
-                                    int cr = int.Parse(msg[3]);
+                                    Clients[msg[0]].topUp(int.Parse(msg[2]));
+                                    MessageBox.Show(msg[2] + " credits purchased");
+                                    int cr = int.Parse(msg[2]);
                                     int cur = int.Parse(creditBox.Text);
                                     cr = cr + cur;
                                     creditBox.Text = cr.ToString();
@@ -365,6 +366,16 @@ namespace CloudTrading
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
         {
 
         }

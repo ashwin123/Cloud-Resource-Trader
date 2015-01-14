@@ -99,9 +99,9 @@ namespace CloudTradingClient
 
         public void GetUpdate(Object o, EventArgs e)
         {            
-            int cpu_avail = r.Next(Convert.ToInt32(0.3*tot_cpu),tot_cpu);
-            int mem_avail = r.Next(Convert.ToInt32(0.3 * tot_mem), tot_mem);
-            int stor_avail = r.Next(Convert.ToInt32(0.3 * tot_stor), tot_stor);
+            int cpu_avail = r.Next(Convert.ToInt32(0.1*tot_cpu),tot_cpu);
+            int mem_avail = r.Next(Convert.ToInt32(0.1 * tot_mem), tot_mem);
+            int stor_avail = r.Next(Convert.ToInt32(0.1 * tot_stor), tot_stor);
             this.Invoke(new MethodInvoker(delegate          // delegate to update
             {
                 //ex-request Client 1:Update:1000:200:500:20:5000:2500
