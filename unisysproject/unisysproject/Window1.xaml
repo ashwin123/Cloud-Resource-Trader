@@ -1,0 +1,56 @@
+﻿<Page x:Class="unisysproject.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CLOUD RESOURCE MEDIATOR" Height="700" Width="1350">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="93*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="electric-cloud-14646-1920x1200.jpg"/>
+        </Grid.Background>
+        <Label Content="CHOOSE YOUR OPTION&#xD;&#xA;" HorizontalAlignment="Left" Height="71" Margin="55,43,0,0" VerticalAlignment="Top" Width="478" Foreground="White" FontFamily="AR ESSENCE" FontSize="55">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="policy" HorizontalAlignment="Left" Height="200" Margin="55,119,0,0" VerticalAlignment="Top" Width="200" Click="policy_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="policies.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="POLICIES &amp; PREFERENCES" HorizontalAlignment="Left" Height="51" Margin="277,203,0,0" VerticalAlignment="Top" Width="416" Foreground="White" FontFamily="AR ESSENCE" FontSize="36">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="auth" HorizontalAlignment="Left" Height="147" Margin="55,331,0,0" VerticalAlignment="Top" Width="169" Click="auth_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="authenticate.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="share"  HorizontalAlignment="Left" Height="139" Margin="55,505,0,0" VerticalAlignment="Top" Width="179" Click="share_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="shareresource.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="CLIENT AUTHENTICATION" HorizontalAlignment="Left" Height="93" Margin="277,375,0,0" VerticalAlignment="Top" Width="358" Foreground="White" FontFamily="AR ESSENCE" FontSize="36">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="SHARE RESOURCES" HorizontalAlignment="Left" Height="57" Margin="277,551,0,0" VerticalAlignment="Top" Width="269" Foreground="White" FontFamily="AR ESSENCE" FontSize="36">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+
+    </Grid>
+</Page>
