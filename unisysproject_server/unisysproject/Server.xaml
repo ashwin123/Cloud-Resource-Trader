@@ -1,0 +1,136 @@
+﻿<Window x:Class="unisysproject.Server"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:unisysproject"
+        mc:Ignorable="d"
+        Title="Server" Height="641.045" Width="1141.418">
+    <Grid Background="#FF17AACB" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="63*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="553" Margin="23,47,0,0" VerticalAlignment="Top" Width="632" Grid.ColumnSpan="2" Background="#FF1A788D">
+            <GroupBox x:Name="client1gbox" Header="Client1" Height="182" FontSize="18.667" Foreground="White" FontWeight="Bold" />
+            <GroupBox x:Name="client2gbox" Header="Client2" Height="182" FontSize="18.667" Foreground="White" FontWeight="Bold"/>
+            <GroupBox x:Name="client3gbox" Header="Client3" Height="182" FontSize="18.667" Foreground="White" FontWeight="Bold"/>
+        </StackPanel>
+        <Label x:Name="ClientsLabel" Content="Connected Clients" HorizontalAlignment="Left" Margin="124,6,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.322,-0.183" Width="239" FontSize="26.667" FontWeight="Bold" Grid.ColumnSpan="2" Foreground="White"/>
+        <Label x:Name="c1_cpuimg" HorizontalAlignment="Left" Margin="124,76,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Computer-icon.png"/>
+            </Label.Background>
+        </Label>
+        <ProgressBar x:Name ="c1_cpu_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,79,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label x:Name="c1_cpu_l" Content="CPU" Margin="40,79,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <ProgressBar x:Name ="c1_mem_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,125,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label x:Name="c1_mem_l" Content="Mem" Margin="40,125,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <ProgressBar x:Name ="c1_storage_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,171,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label x:Name="c1_str_l" Content="STR" Margin="40,171,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c1_memimg" HorizontalAlignment="Left" Margin="124,125,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Ram-icon.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="c1_strimg" HorizontalAlignment="Left" Margin="124,170,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Network-Cloud-Storage-icon.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="c2_cpuimg" HorizontalAlignment="Left" Margin="124,263,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Computer-icon.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="c2_cpu_l" Content="CPU" Margin="40,266,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_mem_l" Content="Mem" Margin="40,312,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_str_l" Content="STR" Margin="40,358,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_memimg" HorizontalAlignment="Left" Margin="124,312,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Ram-icon.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="c2_strimg" HorizontalAlignment="Left" Margin="124,357,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Network-Cloud-Storage-icon.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="c3_cpuimg" HorizontalAlignment="Left" Margin="124,431,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Computer-icon.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="c3_cpu_l" Content="CPU" Margin="40,434,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_mem_l" Content="Mem" Margin="40,480,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_str_l" Content="STR" Margin="40,526,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.621,0.053" Height="41" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_memimg" HorizontalAlignment="Left" Margin="124,480,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Ram-icon.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="c3_strimg" HorizontalAlignment="Left" Margin="124,525,0,0" VerticalAlignment="Top" Height="49" Width="57" RenderTransformOrigin="2.013,0.355" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="images/Network-Cloud-Storage-icon.png"/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="StartServer" Content="Start Server" Grid.Column="1" HorizontalAlignment="Right" Margin="0,10,24,0" VerticalAlignment="Top" Width="292" Height="68" Click="button_Click" FontSize="26.667" FontWeight="Bold" Background="#FF17AACB" BorderBrush="#FF0F0303" Foreground="#FFFFFBFB" Grid.ColumnSpan="2"/>
+        <Label x:Name="StatusLabel" Content="Server Status:" Grid.Column="1" HorizontalAlignment="Left" Margin="485,92,0,0" VerticalAlignment="Top" Foreground="White" FontSize="26.667" FontWeight="Bold"/>
+        <Label x:Name="Statuslabel" Content="Down" Grid.Column="1" HorizontalAlignment="Left" Margin="665,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.595,0.541" Foreground="Red" FontSize="26.667" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <ProgressBar x:Name ="c2_cpu_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,265,0,0" VerticalAlignment="Top" Width="264"/>
+        <ProgressBar x:Name ="c2_mem_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,311,0,0" VerticalAlignment="Top" Width="264"/>
+        <ProgressBar x:Name ="c2_storage_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,357,0,0" VerticalAlignment="Top" Width="264"/>
+        <ProgressBar x:Name ="c3_cpu_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,441,0,0" VerticalAlignment="Top" Width="264"/>
+        <ProgressBar x:Name ="c3_mem_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,487,0,0" VerticalAlignment="Top" Width="264"/>
+        <ProgressBar x:Name ="c3_storage_p" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25,533,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label x:Name="c1_cpu" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,79,0,0" VerticalAlignment="Top" FontSize="20" Width="76" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c1_mips" Content="MIPS" Grid.Column="1" HorizontalAlignment="Left" Margin="411,79,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c1_mem" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,121,0,0" VerticalAlignment="Top" FontSize="20" Width="76" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c1_mb" Content="MB" Grid.Column="1" HorizontalAlignment="Left" Margin="411,121,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c1_storage" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,170,0,0" VerticalAlignment="Top" FontSize="20" Width="76" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c1_gb" Content="GB" Grid.Column="1" HorizontalAlignment="Left" Margin="411,170,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_gb" Content="GB" Grid.Column="1" HorizontalAlignment="Left" Margin="411,357,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_mem" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,312,0,0" VerticalAlignment="Top" FontSize="20" Width="112" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_mb" Content="MB" Grid.Column="1" HorizontalAlignment="Left" Margin="411,311,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_cpu" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,265,0,0" VerticalAlignment="Top" FontSize="20" Width="117" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_mips" Content="MIPS" Grid.Column="1" HorizontalAlignment="Left" Margin="411,264,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c2_storage" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,359,0,0" VerticalAlignment="Top" FontSize="20" Width="112" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_cpu" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,445,0,0" VerticalAlignment="Top" FontSize="20" Width="112" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_mips" Content="MIPS" Grid.Column="1" HorizontalAlignment="Left" Margin="411,445,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_mem" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,487,0,0" VerticalAlignment="Top" FontSize="20" Width="112" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_mb" Content="MB" Grid.Column="1" HorizontalAlignment="Left" Margin="411,487,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_storage" Content="N/A" Grid.Column="1" HorizontalAlignment="Left" Margin="294,533,0,0" VerticalAlignment="Top" FontSize="20" Width="112" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="c3_gb" Content="GB" Grid.Column="1" HorizontalAlignment="Left" Margin="411,533,0,0" VerticalAlignment="Top" FontSize="20" Width="67" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="creditBox" Grid.Column="2" HorizontalAlignment="Left" Height="43" Margin="195,94,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="74" FontSize="26.667" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Label x:Name="CreditLabel" Content="Credits:" Grid.Column="2" HorizontalAlignment="Left" Margin="85,92,0,0" VerticalAlignment="Top" Foreground="White" FontSize="26.667" FontWeight="Bold" RenderTransformOrigin="0.529,0.462"/>
+        <TextBox x:Name="log" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="186" Margin="495,409,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="437" FontSize="24"/>
+        <Label x:Name="LogLabel" Content="Server Log:" Grid.Column="1" HorizontalAlignment="Left" Margin="495,364,0,0" VerticalAlignment="Top" Foreground="White" FontSize="26.667" FontWeight="Bold" Width="154"/>
+        <ComboBox x:Name="rel1" Grid.Column="1" HorizontalAlignment="Left" Margin="495,212,0,0" VerticalAlignment="Top" Width="154" FontSize="26.667" FontWeight="Bold"/>
+        <ComboBox x:Name="rel2" Grid.Column="2" HorizontalAlignment="Left" Margin="101,212,0,0" VerticalAlignment="Top" Width="154" FontSize="26.667" FontWeight="Bold"/>
+        <Label x:Name="PolicyLabel" Content="Policies:" Grid.Column="1" HorizontalAlignment="Left" Margin="495,162,0,0" VerticalAlignment="Top" Foreground="White" FontSize="26.667" FontWeight="Bold"/>
+        <CheckBox x:Name="cp_c" Content="CPU &amp; MEM" Grid.Column="2" HorizontalAlignment="Left" Margin="103,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.452" FontSize="10.667">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <CheckBox x:Name="str_c" Content="Storage" Grid.Column="2" HorizontalAlignment="Left" Margin="78,323,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.452" FontSize="10.667">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <ComboBox x:Name="rel" Grid.Column="1" HorizontalAlignment="Left" Margin="495,271,0,0" VerticalAlignment="Top" Width="154" FontSize="26.667" FontWeight="Bold"/>
+        <Button x:Name="addpol" Content="ADD" Grid.Column="1" HorizontalAlignment="Left" Margin="495,324,0,0" VerticalAlignment="Top" Width="154" Height="40" FontSize="24" FontWeight="Bold" Click="AddPol"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\bin\Debug\unisysproject.exe.config
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\bin\Debug\unisysproject.exe
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\bin\Debug\unisysproject.pdb
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.csprojResolveAssemblyReference.cache
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\Server.g.cs
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\App.g.cs
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject_MarkupCompile.cache
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject_MarkupCompile.lref
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\Server.baml
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.g.resources
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.Properties.Resources.resources
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.csproj.GenerateResource.Cache
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.exe
+c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.pdb
