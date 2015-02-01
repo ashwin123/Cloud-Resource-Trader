@@ -1,0 +1,22 @@
+﻿<Page x:Class="unisysproject.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window3" Height="467.2" Width="1009.6">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="blue-road-abstract-backgrounds-widescreen-wallpapers.jpg"/>
+        </Grid.Background>
+        <Label Content="POLICIES AND PREFERENCES" HorizontalAlignment="Left" Height="73" Margin="247,17,0,0" VerticalAlignment="Top" Width="523" Foreground="White" FontFamily="AR ESSENCE" FontSize="48">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox HorizontalAlignment="Left" Height="259" Margin="23,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="953" BorderThickness="0">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <ScrollBar HorizontalAlignment="Left" Height="259" Margin="947,95,0,0" VerticalAlignment="Top" Width="29" BorderThickness="0"/>
+
+    </Grid>
+</Page>

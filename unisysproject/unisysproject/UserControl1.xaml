@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="unisysproject.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="167.2" Width="404">
+    <Grid Background="#FF767575" Margin="0,0,0,0.2" HorizontalAlignment="Left" Width="404">
+        <ProgressBar HorizontalAlignment="Left" Height="30" Margin="10,20,0,0" VerticalAlignment="Top" Width="381"/>
+        <ProgressBar HorizontalAlignment="Left" Height="33" Margin="10,65,0,0" VerticalAlignment="Top" Width="381"/>
+        <ProgressBar HorizontalAlignment="Left" Height="33" Margin="10,112,0,0" VerticalAlignment="Top" Width="381"/>
+
+    </Grid>
+</UserControl>
