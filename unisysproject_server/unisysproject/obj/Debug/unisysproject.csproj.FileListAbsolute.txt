@@ -12,3 +12,6 @@ c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysprojec
 c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.csproj.GenerateResource.Cache
 c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.exe
 c:\users\keshav\documents\visual studio 2015\Projects\unisysproject\unisysproject\obj\Debug\unisysproject.pdb
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\Cloud-Resource-Trader\unisysproject_server\unisysproject\bin\Debug\unisysproject.exe.config
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\Cloud-Resource-Trader\unisysproject_server\unisysproject\obj\Debug\unisysproject.exe
+C:\Users\Keshav\Documents\GitHub\Cloud-Resource-Trader\Cloud-Resource-Trader\unisysproject_server\unisysproject\obj\Debug\unisysproject.pdb

@@ -19,9 +19,12 @@ namespace unisysproject
     /// </summary>
     public partial class records : Page
     {
-        public records()
+        String id;
+        public records(String id)
         {
             InitializeComponent();
+            this.id = id;
+            Console.Write("id here : " + id);
         }
     }
 }

@@ -1,17 +1,18 @@
-﻿<Window x:Class="unisysproject.successlogin"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="unisysproject.successlogin"
         Title="CLOUD RESOURCE MEDIATOR" Height="616.931" Width="991.4">
-    <Grid>
+    <Grid d:IsLocked="True">
         <Grid.Background>
             <ImageBrush ImageSource="blue-road-abstract-backgrounds-widescreen-wallpapers.jpg"/>
         </Grid.Background>
-        <Label Content="LOGIN SUCCESSFUL" HorizontalAlignment="Left" Height="70" Margin="311,27,0,0" VerticalAlignment="Top" Width="347" Background="{x:Null}" Foreground="White" FontFamily="AR ESSENCE" FontSize="48">
+        <Label Content="LOGIN SUCCESSFUL" HorizontalAlignment="Left" Height="70" Margin="311,27,0,0" VerticalAlignment="Top" Width="347" Background="{x:Null}" Foreground="White" FontFamily="AR ESSENCE" FontSize="48" d:IsLocked="True">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="" HorizontalAlignment="Left" Height="245" Margin="377,131,0,0" VerticalAlignment="Top" Width="234">
+        <Label Content="" HorizontalAlignment="Left" Height="245" Margin="377,131,0,0" VerticalAlignment="Top" Width="234" d:IsLocked="True">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="8"/>
             </Label.Effect>
@@ -19,12 +20,12 @@
                 <ImageBrush ImageSource="icon.png"/>
             </Label.Background>
         </Label>
-        <Label Content="YOU ARE NOW SECURE AND GOOD TO GO." HorizontalAlignment="Left" Height="84" Margin="211,438,0,0" VerticalAlignment="Top" Width="520" Foreground="White" FontFamily="AR ESSENCE" FontSize="30">
+        <Label Content="YOU ARE NOW SECURE AND GOOD TO GO." HorizontalAlignment="Left" Height="84" Margin="211,438,0,0" VerticalAlignment="Top" Width="520" Foreground="White" FontFamily="AR ESSENCE" FontSize="30" d:IsLocked="True">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="" HorizontalAlignment="Left" Height="104" Margin="721,407,0,0" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5">
+        <Label Content="" HorizontalAlignment="Left" Height="104" Margin="721,407,0,0" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1" ScaleX="-1"/>

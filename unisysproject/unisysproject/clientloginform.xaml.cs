@@ -67,7 +67,8 @@ namespace unisysproject
                    {
                        id = auth[s][2];
                        Console.WriteLine("id : " + id);
-                       break;
+                       this.NavigationService.Navigate(new SharingPage(id));
+                      // break;
                    }
                    else
                        MessageBox.Show("Incorrect password!");
